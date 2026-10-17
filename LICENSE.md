@@ -12,11 +12,11 @@ Stand: 17. Oktober 2026 · Maßgeblich ist diese deutsche Fassung.
 
 (2) Genehmigungen, Lizenzen und sonstige Erklärungen der Urheber nach diesen Bedingungen sind nur wirksam, wenn sie in Textform (z. B. E-Mail) von beiden Urhebern oder von einem Urheber mit ausdrücklicher Vollmacht des anderen abgegeben werden.
 
-(3) Kontakt für Anfragen: [E-Mail-Adresse einfügen]
+(3) Kontakt für Anfragen: 1m9u9ejq2@mozmail.com
 
 ## § 2 Begriffsbestimmungen
 
-1. **Website**: das unter [Adresse einfügen] bzw. in diesem Repository bereitgestellte Gesamtangebot.
+1. **Website**: die in diesem Repository bereitgestellte Gesamtangebot.
 2. **Eigene Werke**: die von den Urhebern selbst geschaffenen Bestandteile der Website, insbesondere
    - der Quellcode (HTML, CSS, JavaScript) einschließlich der Startseite (`index.html`), der Übersichtsseite der Bundesstaaten, der Suchfunktion und der Einbindung der interaktiven Karte,
    - die Grundstruktur, Seitenarchitektur, Navigation und das Inhaltsverzeichnis,
