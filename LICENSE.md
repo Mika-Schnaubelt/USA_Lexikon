@@ -16,7 +16,7 @@ Stand: 17. Oktober 2026 · Maßgeblich ist diese deutsche Fassung.
 
 ## § 2 Begriffsbestimmungen
 
-1. **Website**: die in diesem Repository bereitgestellte Gesamtangebot.
+1. **Website**: das in diesem Repository bereitgestellte Gesamtangebot.
 2. **Eigene Werke**: die von den Urhebern selbst geschaffenen Bestandteile der Website, insbesondere
    - der Quellcode (HTML, CSS, JavaScript) einschließlich der Startseite (`index.html`), der Übersichtsseite der Bundesstaaten, der Suchfunktion und der Einbindung der interaktiven Karte,
    - die Grundstruktur, Seitenarchitektur, Navigation und das Inhaltsverzeichnis,
