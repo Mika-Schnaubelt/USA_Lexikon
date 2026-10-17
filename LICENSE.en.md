@@ -12,11 +12,11 @@ Version: 17 October 2026 · The German version is authoritative. This English ve
 
 (2) Permissions, licenses and other declarations by the Authors under these Terms are only effective if given in text form (e.g. by email) by both Authors, or by one Author with the express authorization of the other.
 
-(3) Contact for requests: [insert email address]
+(3) Contact for requests: 1m9u9ejq2@mozmail.com
 
 ## § 2 Definitions
 
-1. **Website**: the overall offering made available at [insert address] and/or in this repository.
+1. **Website**: the overall offering made available in this repository.
 2. **Own Works**: the components of the Website created by the Authors themselves, in particular
    - the source code (HTML, CSS, JavaScript), including the start page (`index.html`), the overview page of the US states, the search function and the integration of the interactive map,
    - the basic structure, page architecture, navigation and table of contents,
