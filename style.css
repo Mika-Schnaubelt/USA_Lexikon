@@ -24,7 +24,7 @@ h1 {
 }
 
 .content-box-start {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 40px auto;
     text-align: center;
     padding: 50px;
@@ -174,7 +174,7 @@ h1 {
 .blob {
     position: absolute;
     border-radius: 50%;
-    filter: blur(90%);
+    filter: blur(90px);
     opacity: 0.55;
     will-change: transform;
 }
@@ -182,7 +182,7 @@ h1 {
 .blob-1 {
     width: 520px; height: 520px;
     background: #3b82f6;
-    top: -170px; left: -100px;
+    top: -120px; left: -100px;
     animation: drift1 22s ease-in-out infinite alternative;
 }
 
