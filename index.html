@@ -6,7 +6,13 @@
     <title>USA-Lexikon</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body data-root="">
+    <header class="site-header">
+      <div class="header-search">
+        <input type="text" id="wikiSearch" class="search-input" placeholder="Wiki durchsuchen..." autocomplete="off">
+        <ul class="search-results" id="searchResults"></ul>
+      </div>  
+    </header>
     <div class="content-box-start">
       <h1>USA-Lexikon</h1>
       <p style="font-size: 1.15rem; line-height: 1.5; color: #a9a9a9;">

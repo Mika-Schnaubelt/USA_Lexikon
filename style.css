@@ -116,7 +116,7 @@ h1 {
     margin-bottom: 20px 0;
 }
 
-#stateSearch {
+.search-input {
     width: 100%;
     padding: 12px 18px;
     font-size: 16px;
@@ -129,11 +129,11 @@ h1 {
     transition: background 0.2s ease, border-color 0.2s ease;
 }
 
-#stateSearch::placeholder {
+.search-input::placeholder {
     color: rgba(255, 255, 255, 0.6);
 }
 
-#stateSearch:focus {
+.search-input:focus {
     background: rgba(255, 255, 255, 0.15);
     border-color: rgba(255, 255, 255, 0.5);
 }
@@ -204,3 +204,92 @@ h1 {
 @keyframes drift1 { to { transform: translate(180px, 120px) scale(1.15); }}
 @keyframes drift2 { to { transform: translate(-200px, -80px) scale(0.9); }}
 @keyframes drift3 { to { transform: translate(140px, -160px) scale(1.2); }}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 12px 20px;
+    padding: 10px 24px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.04));
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.header-left {
+    position: absolute;
+    left: 270px;
+    display: flex;
+    gap: 10px;
+}
+
+.header-left .glass-back-btn {
+    margin-bottom: 0;
+}
+
+.header-search {
+    position: relative;
+    flex: 1;
+    max-width: 420px;
+    min-width: 180px;
+}
+
+.header-search .search-input {
+    width: 100%;
+    padding: 10px 18px;
+    font-size: 15px;
+}
+
+.search-results {
+    position: absolute;
+    top: calc(100% + 8px); 
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 6px;
+    list-style: none;
+    background: rgba(30, 34, 40, 0.92);  
+    backdrop-filter: blur(16px); 
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.search-results:empty {
+    display: none;
+}
+
+.search-results a:hover {
+    background: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+}
+
+.breadcrumbs {
+    position: absolute;
+    right: 270px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.6);
+    white-space: nowrap;
+}
+
+.breadcrumbs a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    color: #ffffff;
+}
+
+.breadcrumbs span {
+    color: #ffffff;
+}
+

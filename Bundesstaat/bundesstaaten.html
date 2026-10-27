@@ -6,8 +6,21 @@
     <title>Bundesstaaten</title>
     <link rel="stylesheet" href="../style.css">
   </head>
-  <body>
-    <a href="../index.html" class="glass-back-btn">← Zurück</a>
+  <body data-root="../">
+    <header class="site-header">
+      <div class="header-left">
+        <a class="glass-back-btn" href="../index.html">← Zurück</a>
+        <a class="glass-back-btn" href="../index.html">⌂ Home</a>
+      </div>
+      <div class="header-search">
+        <input type="text" id="wikiSearch" class="search-input" placeholder="Wiki durchsuchen..." autocomplete="off">
+        <ul class="search-results" id="searchResults"></ul>
+      </div>
+      <nav class="breadcrumbs">
+        <a href="../index.html">Home</a> &gt;
+        <span>Bundesstaaten</span>
+      </nav>
+    </header>
     <div class="content-box">
         <h1>Bundesstaaten</h1>
         <p>
@@ -15,7 +28,7 @@
             Wähle einen Staat aus, um mehr zu erfahren:
         </p> 
         <div class="search-container">
-            <input type="text" id="stateSearch" placeholder="Bundestaat suchen..." onkeyup="filterStates()">
+            <input type="text" id="stateSearch" class="search-input" placeholder="Bundestaat suchen..." onkeyup="filterStates()">
         </div>
         <ul class="states-list" id="statesList">
             <li><a href="Bundesstaaten/alabama.html">Alabama</a></li>

@@ -6,8 +6,22 @@
     <title>Alabama</title>
     <link rel="stylesheet" href="../../style.css">
   </head>
-  <body>
-    <a href="../bundesstaaten.html" class="glass-back-btn">← Zurück</a>
+  <body data-root="../../">
+    <header class="site-header">
+      <div class="header-left">
+        <a class="glass-back-btn" href="../bundesstaaten.html">← Zurück</a>
+        <a class="glass-back-btn" href="../../index.html">⌂ Home</a>
+      </div>
+      <div class="header-search">
+        <input type="text" id="wikiSearch" class="search-input" placeholder="Wiki durchsuchen..." autocomplete="off">
+        <ul class="search-results" id="searchResults"></ul>
+      </div>
+      <nav class="breadcrumbs">
+        <a href="../../index.html">Home</a> &gt;
+        <a href="../bundesstaaten.html">Bundesstaaten</a> &gt;
+        <span>Alabama</span>
+      </nav>
+    </header>
     <div class="content-box">
         <h1>Alabama</h1>
         <img src="../Bundesstaaten/Bilder/alabama.jpeg" alt="Alabama" class="content-img">

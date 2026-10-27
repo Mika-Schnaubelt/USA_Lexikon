@@ -6,8 +6,21 @@
     <title>Grundlegende Informationen über die USA</title>
     <link rel="stylesheet" href="../style.css">
   </head>
-  <body>
-    <a href="../index.html" class="glass-back-btn">← Zurück</a>
+  <body data-root="../">
+    <header class="site-header">
+      <div class="header-left">
+        <a class="glass-back-btn" href="../index.html">← Zurück</a>
+        <a class="glass-back-btn" href="../index.html">⌂ Home</a>
+      </div>
+      <div class="header-search">
+        <input type="text" id="wikiSearch" class="search-input" placeholder="Wiki durchsuchen..." autocomplete="off">
+        <ul class="search-results" id="searchResults"></ul>
+      </div>
+      <nav class="breadcrumbs">
+        <a href="../index.html">Home</a> &gt;
+        <span>Grundlegende Informationen über die USA</span>
+      </nav>
+    </header>
     <div class="content-box">
         <h1>Grundlegende Informationen über die USA</h1>
         <img src="Bilder/Flag_of_the_United_States_(Pantone).svg" alt="Flagge der USA" class="content-img">
