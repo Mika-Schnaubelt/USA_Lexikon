@@ -261,6 +261,8 @@ h1 {
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 16px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    text-align: left;
 }
 
 .search-results:empty {
@@ -293,3 +295,9 @@ h1 {
     color: #ffffff;
 }
 
+.start-search {
+    position: relative;
+    max-width: 420px;
+    min-width: 180px;
+    margin: 25px auto;
+}
