@@ -6,10 +6,10 @@ input.addEventListener('input', () => {
     list.innerHTML = '';
     if (!q) return;
     SEITEN
-        .filter(s => s.titel.toLowerCase().includes(q))
+        .filter(s => s.titel.toLowerCase().startsWith(q))
         .slice(0, 6)
         .forEach(s => {
-            const li = documnet.createElement('li');
+            const li = document.createElement('li');
             const a = document.createElement('a');
             a.href = root + s.url;
             a.textContent = s.titel;
