@@ -7,7 +7,7 @@ const SEITEN = [
     { titel: "Arizona",        url: "Bundesstaat/Bundesstaaten/arizona.html" },
     { titel: "Arkansas",       url: "Bundesstaat/Bundesstaaten/arkansas.html" },
     { titel: "Colorado",       url: "Bundesstaat/Bundesstaaten/colorado.html" },
-    { titel: "Connecticut",    url: "Bundesstaat/Bundesstaaten/connecticut.html" },
+    { titel: "Connecticut",    url: "Bundesstaat/Bundesstaaten/conneticut.html" },
     { titel: "Delaware",       url: "Bundesstaat/Bundesstaaten/delaware.html" },
     { titel: "Florida",        url: "Bundesstaat/Bundesstaaten/florida.html" },
     { titel: "Georgia",        url: "Bundesstaat/Bundesstaaten/georgia.html" },

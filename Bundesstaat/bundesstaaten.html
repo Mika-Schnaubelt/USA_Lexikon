@@ -36,7 +36,7 @@
             <li><a href="Bundesstaaten/arizona.html">Arizona</a></li>
             <li><a href="Bundesstaaten/arkansas.html">Arkansas</a></li>
             <li><a href="Bundesstaaten/colorado.html">Colorado</a></li>
-            <li><a href="Bundesstaaten/connecticut.html">Connecticut</a></li>
+            <li><a href="Bundesstaaten/conneticut.html">Connecticut</a></li>
             <li><a href="Bundesstaaten/delaware.html">Delaware</a></li>
             <li><a href="Bundesstaaten/florida.html">Florida</a></li>
             <li><a href="Bundesstaaten/georgia.html">Georgia</a></li>
@@ -83,6 +83,11 @@
             <li><a href="Bundesstaaten/wyoming.html">Wyoming</a></li>
         </ul>
     </div>
+    <div class="content-box map-box">
+      <h2>Karte der USA</h2>
+      <p>Klicke auf einen Bundesstaat, um direkt zu seiner Seite zu gelangen.</p>
+      <div id="map"></div>
+    </div>
     <script>
     function filterStates() {
         let input = document.getElementById('stateSearch');
@@ -100,6 +105,43 @@
         }
     }
     </script>
+    <script src="../mapdata.js"></script>
+    <script>
+    (function () {
+      var links = {};
+      document.querySelectorAll('#statesList a').forEach(function (a) {
+        links[a.textContent.trim()] = a.getAttribute('href');
+      });
+      var deutsch = { "California": "Kalifornien"};
+      var states = simplemaps_usmap_mapdata.state_specific;
+      simplemaps_usmap_mapdata.locations = {};
+      Object.keys(states).forEach(function (id) {
+        var st = states[id];
+        var name = deutsch[st.name] || st.name;
+        if (links[name]) {
+                st.url = links[name];
+                st.description = name + " – zur Seite";
+        } else {
+                st.inactive = "yes"; 
+        }
+      });  
+      var s = simplemaps_usmap_mapdata.main_settings;
+      s.url_new_tab = "no";
+      s.state_color = "rgba(255,255,255,0.28)";
+      s.state_hover_color = "#3b82f6";
+      s.border_color = "#1a1d20";
+      s.border_size = 1.2;
+      s.label_color = "#ffffff";
+      s.label_hover_color = "#ffffff";
+      s.location_color = "#f97316";
+      s.background_transparent = "yes";
+      s.popup_color = "#ffffff";
+      s.popup_opacity = 0.95;
+      s.popup_corners = 10;
+      s.popup_font = "13px/1.5 'Segoe UI', Arial, sans-serif";
+    })();  
+    </script>
+    <script src="../usmap.js"></script>
     <script src="../seiten.js"></script>
     <script src="../suche.js"></script>
   </body>
